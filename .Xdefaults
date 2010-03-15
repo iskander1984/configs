@@ -1,0 +1,68 @@
+!----------------------------------------
+!fonts
+!----------------------------------------
+URxvt.font: xft:Terminus:pixelsize=14
+URxvt.boldFont: xft:Terminus:pixelsize=14
+
+!----------------------------------------
+!urxvt
+!----------------------------------------
+URxvt.title: terminal
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
+URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+URxvt.urgentOnBell: true
+
+!----------------------------------------
+!general
+!----------------------------------------
+URxvt.utf8: 1
+URxvt.faceSize: 7
+URxvt.jumpScroll: true
+URxvt.multiScroll: true
+URxvt.boldMode: false
+URxvt.borderless: true
+URxvt.scrollBar: false
+URxvt.cutNewline: false
+URxvt.scrollTtyOutput: false
+URxvt.scrollKey: true
+URxvt.cursorBlink: true
+URxvt.dynamicColors: false
+URxvt.saveLines: 3000
+URxvt.geometry: 80x24
+
+!----------------------------------------
+!applications
+!----------------------------------------
+yeahconsole*term: urxvt
+yeahconsole*background: #212121
+yeahconsole*foreground: #b8b8b8
+yeahconsole*screenWidth: 1280
+yeahconsole*aniDelay: 1
+yeahconsole*toggleKey: None+F12
+yeahconsole*font: xft:Terminus:pixelsize=12
+yeahconsole*boldFont: xft:Terminus:pixelsize=12
+yeahconsole.scrollBar: false
+yeahconsole.cursorColor2: #000000
+yeahconsole*consoleHeight:45
+yeahconsole*stepSize: 0
+yeahconsole*xOffset: 0
+yeahconsole*perl-ext: tabbed
+yeahconsole.tabbed.tabbar-fg: 2
+yeahconsole.tabbed.tabbar-bg: 0
+yeahconsole.tabbed.tab-fg: 1
+yeahconsole.tabbed.tab-bg: 0
+
+xpdf*enableFreetype: yes
+xpdf*antialias: yes
+xpdf*foreground: black
+xpdf*background: white
+xpdf*urlCommand: firefox %s
+xpdf*viKeys: on
+
+!----------------------------------------
+!colors
+!----------------------------------------
+URxvt.background: #1C1C1C
+URxvt.foreground: #D0D0D0
