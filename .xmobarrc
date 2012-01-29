@@ -1,0 +1,18 @@
+Config { font = "-*-terminus-medium-*-*-*-12-*-*-*-*-*-*-u"
+       , bgColor = "black"
+       , fgColor = "grey"
+       , position = TopW L 100
+       , lowerOnStart = True
+       , commands = [ Run Battery ["-t","bat:<left>%","-L","25","-H","75","--normal","yellow","--high","green","--low","red"] 10
+                    , Run Com "skb" ["-l"] "layout" 10
+                    , Run MultiCpu ["-t","cpu:<total>%","-L","50","-H","85","--normal","yellow","--high","red","--low","green"] 10
+                    , Run Memory ["-t","mem:<usedratio>%","-L","50","-H","85","--normal","yellow","--high","red","--low","green"] 10
+                    , Run Com "sh" ["~/bin/volumeLevel"] "volume" 10
+                    , Run Date "%D %I:%M" "date" 60
+                    , Run Com "mpc" ["current"] "mpc" 30
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ %mpc% | %multicpu% | %memory% | %battery% | vol:%volume% | %layout% | <fc=#FFFFFF>%date%</fc>"
+       }
